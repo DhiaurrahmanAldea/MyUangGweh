@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "MyUangGweh",
+    "slug": "myuanggweh",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aldea.myuanggweh"
+    },
+    "android": {
+      "package": "com.aldea.myuanggweh",
+      "adaptiveIcon": {
+        "backgroundColor": "#0F766E",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-sharing",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow MyUangGweh to attach receipt photos from your library.",
+          "cameraPermission": "Allow MyUangGweh to take receipt photos for transactions."
+        }
+      ]
+    ]
+  }
+}
